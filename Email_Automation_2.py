@@ -9,7 +9,7 @@ smtp = smtplib.SMTP('smtp.gmail.com', 587)
 smtp.ehlo()
 smtp.starttls()
 
-smtp.login('kakashihatakninja@gmail.com', 'ehme bebc yshk kmtq')  
+smtp.login('<gmail>', '<password>')  
 
 
 send = input('Enter recipient email(s), separated by spaces: ').split()

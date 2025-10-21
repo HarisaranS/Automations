@@ -4,7 +4,7 @@ import tkinter as tk
 
 def screenshot():
     time.sleep(0)
-    name = f'/home/saran/Pictures/Screenshots/{time.time()}.png'
+    name = f'/path/to/save/{time.time()}.png'
     img = pyautogui.screenshot()
     img.save(name)
     img.show()

@@ -1,10 +1,12 @@
 import pyautogui
 import time
 import tkinter as tk
+import os
 
 def screenshot():
-    time.sleep(0)
-    name = f'/path/to/save/{time.time()}.png'
+    folder = '/home/saran/Pictures/Screenshots'
+    os.makedirs(folder, exist_ok=True)  
+    name = f'{folder}/{time.time()}.png'
     img = pyautogui.screenshot()
     img.save(name)
     img.show()
